@@ -1,0 +1,21 @@
+/* Imported from themify-icons */
+[class^="ti-"], [class*=" ti-"] {
+	font-family: 'themify';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ti-arrow-up:before {
+	content: "\e627";
+}
+
+.ti-menu:before {
+	content: "\e68e";
+}

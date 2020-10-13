@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "themify";
+    src:
+        url(../fonts/themify.ttf) format('tff'),
+        url(../fonts/themify.woff) format('woff'),
+        url(../fonts/themify.eot) format('eot'),
+        url(../fonts/themify.svg) format('svg');
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "themify";
+    width: auto;
+    color: rgba(0,0,0,1);
+}
+
+a:hover {
+    color: rgb(218, 75, 9);
+}
+i {
+    margin-right: 10px;
+}
+i:hover {
+    color: rgb(218, 75, 9);
+}
+
+li, a, button{
+    color: #000;
+}
+
+
+hr { line-break: loose;}
+
+#fix {
+    background-image: url(../images/fix.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.logo {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+.jumbotron {
+    margin-top: 10px;
+    border-radius: 0;
+    background: transparent;
+}
+.container:first-child {
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+.about {
+    border-radius: 50px;
+    width: 110px;
+    padding: 10px 0;
+}
+.stat {
+    background-image: url(../images/stat.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.svg-icons {
+    width: 20px;
+    height: 20px;
+    padding: 0 auto;
+}
+/* Testimonials */
+.testimonial {
+    background-image: url(../images/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:top right;
+}
+
+/* Boxes */
+.box {
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0 25px 30px -20px rgba(0,0,0,1); 
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+.box:hover img {
+    transform: scale(1.15);
+}
+.box > img {
+    transition: all 1.5s ease;
+    width: 100%;
+}
+.box-content {
+    position: absolute;
+    bottom:0;
+    padding:15px;
+    color:#fff;
+}
+
+.box > .box-content > span > i {
+    display: none;
+}
+.box:hover > .box-content > span > i {
+    display: inline-flex;
+}
+.box > .box-content > span > i:hover {
+    color: rgb(218, 75, 9);
+}
+
+/* Price Section */
+.pricing-box {
+    width:100%;
+    vertical-align:top;
+    background:#fff;
+    box-shadow:0 15px 15px -15px rgba(0,0,0,0.3);
+    padding:40px 20px;
+    text-align:center;
+    position:relative;
+    color:#000;
+    border-radius:10px;
+}
+
+/* Form */
+.form-container {
+    border-radius: 5px;
+    top: -50px;}
+.form-control {
+    color: #000;
+    border: 1px solid #f1f1f1;
+    height: 44px;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.1);
+}
+.form-group > textarea {
+    height:120px;
+    resize:none;
+}
+.form-group > .btn-outline-orange {
+    border-radius: 50px;
+    background-color:rgb(218, 75, 9);
+    border-color: rgb(218, 75, 9);
+    color: #fff;
+    padding: 10px 30px;
+}
+.form-group > .btn-outline-orange:hover {
+    color: rgb(218, 75, 9);
+    background-color: transparent;
+    border-color: rgb(218, 75, 9);
+    transition:0.5s ease-in-out;
+}
+
+.x-padding {
+    padding-left: 120px;
+}
+
+footer {
+    background-color: #212325 !important;
+    padding:17px 0;
+    font-size: 12px;
+}
+
+
+  
+#up {
+    font-weight: bold;
+    font-size: 25px;  position: fixed;
+    right: 10px;
+    top: 85%;
+    border-radius: 50%;
+    color: #000;
+    background-color: #f1f1f1;
+    padding:4px 10px;
+    margin: 0;
+}
+#up > a > i {
+    margin: 0;
+}
+#up > a > i > ti-arrow-up{
+    width: 35px;
+    height: 35px;
+}
+
+#hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .blank {
+        display: none;
+    }
+
+    .form-container {
+        top: 0;
+    }
+
+    #pricing {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .x-padding {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .x-padding {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    #x-fs {
+        font-size: x-large;
+    }
+    
+    .x-pl {
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width: 10px) {
+    div, header, footer, section, .row{
+        display: none;
+    }
+    body {
+        background-color: rgb(14, 13, 13);
+        color: whitesmoke;
+    }
+    #hidden {
+        display: block;
+    }
+}
+
